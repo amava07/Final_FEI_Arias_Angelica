@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -21,11 +25,11 @@
 			<div class="nav_menu">
 				<nav>
 					<ul type="none">
-						<li><a href="#"></a>Pricing</li>
-						<li><a href="#"></a>Product</li>
-						<li><a href="#"></a>About Us</li>
-						<li><a href="#"></a>Careers</li>
-						<li><a href="#"></a>Community</li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Community</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -44,6 +48,7 @@
 			</div>
 			<div class="div_two_main">
 				<img
+					class="img_main"
 					src="./imagenes/illustration-intro.svg"
 					alt="gráficos_estadisticas"
 				/>
@@ -86,11 +91,14 @@
 			</div>
 		</section>
 		<section class="coments">
-				<h2>What they´ve said</h2>
-			</div>
+			<h2>What they´ve said</h2>
 			<div class="profile_coments">
 				<div class="div_profile_unique">
-					<img src="./imagenes/avatar-anisha.png" alt="Perfil Anisha" />
+					<img
+						class="avatar"
+						src="./imagenes/avatar-anisha.png"
+						alt="Perfil Anisha"
+					/>
 					<h4>Anisha Li</h4>
 					<p class="text_two">
 						“Manage has supercharged our team´s workflow. The ability to
@@ -99,7 +107,11 @@
 					</p>
 				</div>
 				<div class="div_profile_unique">
-					<img src="./imagenes/avatar-ali.png" alt="Perfil Ali Bravo" />
+					<img
+						class="avatar"
+						src="./imagenes/avatar-ali.png"
+						alt="Perfil Ali Bravo"
+					/>
 					<h4>Ali Bravo</h4>
 					<p class="text_two">
 						“We have been able to cancel so many other subscriptions since using
@@ -108,7 +120,11 @@
 					</p>
 				</div>
 				<div class="div_profile_unique">
-					<img src="./imagenes/avatar-richard.png" alt="Perfil Richard" />
+					<img
+						class="avatar"
+						src="./imagenes/avatar-richard.png"
+						alt="Perfil Richard"
+					/>
 					<h4>Richard Watts</h4>
 					<p class="text_two">
 						“Manage allows us to provide structure and process. It keeps us
@@ -119,6 +135,44 @@
 			</div>
 			<button class="button">Get Started</button>
 		</section>
-		<footer></footer>
+		<footer>
+			<div class="div_footer1">
+				<img src="./imagenes/logo_footer.png" alt="logo_empresarial" />
+				<nav>
+					<a href=""><i class="fab fa-facebook-square"></i></a>
+					<a href=""><i class="fab fa-youtube"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+					<a href=""><i class="fab fa-pinterest"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+				</nav>
+			</div>
+			<div class="div_footer2">
+				<nav>
+					<ul type="none">
+						<a href="#"><li>Home</li></a>
+						<a href="#"><li>Pricing</li></a>
+						<a href="#"><li>Products</li></a>
+						<a href="#"><li>About US</li></a>
+					</ul>
+					<ul type="none">
+						<a href="#"><li>Careers</li></a>
+						<a href="#"><li>Community</li></a>
+						<a href="#"><li>Privacy Policy</li></a>
+					</ul>
+				</nav>
+			</div>
+			<div class="div_footer3">
+				<form action="registro" method="post">
+					<input
+						type="email"
+						name="email"
+						placeholder="Update in your inbox..."
+						required
+					/>
+					<input type="submit" value="Go" name="Go" />
+				</form>
+				<p>Copy</p>
+			</div>
+		</footer>
 	</body>
 </html>

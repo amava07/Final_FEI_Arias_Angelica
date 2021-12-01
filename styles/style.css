@@ -1,8 +1,9 @@
 body {
 	/*estilo general de la página*/
 	font-family: "Be Vietnam Pro", sans-serif;
-	position: relative;
+	height: 100%;
 }
+
 /*estilos header:*/
 header {
 	display: flex;
@@ -11,17 +12,29 @@ header {
 	margin-left: 100px;
 	margin-right: 165px;
 }
+
+/*menú superior*/
 .nav_menu ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+a {
+	text-decoration: none;
+	color: #242e52;
 	font-weight: 500;
 	font-size: 13px;
-	color: #242e52;
 }
+
+a:hover {
+	color: #b3b2b7;
+}
+
 .nav_menu li {
-	padding: 0px 20px 0px 20px;
+	padding: 0px 20px;
 }
+
 *.button {
 	background-color: #f3603b;
 	border-radius: 50px;
@@ -33,125 +46,164 @@ header {
 	color: #ffffff;
 	box-shadow: 0px 4px 7px 0px #00000040;
 }
+
 *.button:hover {
 	background-color: #00000040;
 }
+
 /*estilos main*/
 main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-left: 165px;
 	margin-right: 165px;
 }
+
 .div_one_main {
 	width: 439px;
-	height: 386px;
+	height: 486px;
 }
+
 .div_one_main h1 {
+	/*titulo principal*/
 	font-weight: 700;
 	font-size: 58px;
 	line-height: 66.47px;
 	color: #232c50;
 }
+
+/*párrafo del main*/
 *.text {
-	/*párrafo del main*/
+	/* párrafos que comparten estilo*/
 	font-weight: 500;
 	font-size: 16.56px;
 	line-height: 26.01px;
 	color: #000000;
 }
+
 .div_two_main {
 	/*imágenes del main*/
-	width: 540px;
-	height: 485px;
+	width: 439px;
+	height: 486px;
 }
+.img_main {
+	width: 450px;
+}
+
 /*estilos section*/
 section {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 100px;
-	margin-left: 165px;
-	margin-right: 165px;
-	height: 500px;
+	align-content: center;
+	margin: 50px 165px;
+	height: 300px;
+	clear: both;
 }
+
 .div_one_section {
 	width: 433px;
 	height: 221px;
 }
+
 .div_one_section h3 {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 41.26px;
 	color: #232851;
 }
+
 .div_two_section {
 	display: flex;
 	flex-direction: column;
 	width: 437px;
 	height: 43px;
 }
+
 .subtitle_1 {
+	position: relative;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 23.38px;
 	color: #323851;
 }
+
 .subtitle_1::before {
 	content: "01";
+	position: absolute;
+	left: -6.38vw;
+	top: -10px;
 	color: #ffffff;
 	background-color: #f3603b;
 	border-radius: 30px;
-	padding: 10px 25px 10px 25px;
-	width: 69px;
-	height: 43px;
+	padding: 10px 25px;
+	width: 20px;
+	height: 20px;
 }
+
 .subtitle_2 {
+	position: relative;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 23.38px;
 	color: #323851;
 }
+
 .subtitle_2::before {
 	content: "02";
+	position: absolute;
+	left: -6.38vw;
+	top: -10px;
 	color: #ffffff;
 	background-color: #f3603b;
 	border-radius: 30px;
-	padding: 10px 25px 10px 25px;
-	width: 69px;
-	height: 43px;
+	padding: 10px 25px;
+	width: 20px;
+	height: 20px;
 }
+
 .subtitle_3 {
+	position: relative;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 23.38px;
 	color: #323851;
 }
+
 .subtitle_3::before {
 	content: "03";
+	position: absolute;
+	left: -6.38vw;
+	top: -10px;
 	color: #ffffff;
 	background-color: #f3603b;
 	border-radius: 30px;
-	padding: 10px 25px 10px 25px;
-	width: 69px;
-	height: 43px;
+	padding: 10px 25px;
+	width: 20px;
+	height: 20px;
 }
+
 .text_two {
 	font-weight: 500;
 	font-size: 16.3px;
 	line-height: 25.52px;
 	color: #b3b2b7;
 }
+.white {
+	clear: both;
+	margin: 20%;
+}
 /*estilos section coments*/
 .coments {
 	display: flex;
 	flex-direction: column;
-	width: 1298px;
-	height: 478px;
-	left: 71px;
-	top: 1510px;
+	justify-content: space-evenly;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
+
 .coments h2 {
 	text-align: center;
 	font-size: 39.21px;
@@ -159,19 +211,43 @@ section {
 	line-height: 61.41px;
 	color: #242e53;
 }
+
 .profile_coments {
 	display: flex;
 	flex-direction: row;
+	margin-top: 10px;
 }
+
 .div_profile_unique {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #fafafa;
 }
-.button {
-	text-align: center;
+
+.div_profile_unique h4 {
+	/* nombre de perfil*/
+	font-size: 16px;
+	font-weight: 700;
+	color: #3f4868;
 }
+
+.avatar {
+	/*ubicación de la foto*/
+	position: relative;
+	bottom: 70px;
+}
+
+/*estilos del footer*/
 footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: #1e1e26;
+}
+.div_footer1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	color: #ffffff;
 }
