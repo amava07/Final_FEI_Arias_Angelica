@@ -23,7 +23,7 @@
 				<img src="./imagenes/logo.svg" alt="logo_empresarial" />
 			</div>
 			<div class="nav_menu">
-				<nav>
+				<nav class="menu_header">
 					<ul type="none">
 						<li><a href="#">Pricing</a></li>
 						<li><a href="#">Product</a></li>
@@ -35,6 +35,7 @@
 			</div>
 			<div>
 				<button class="button">Get Started</button>
+				<a id="hamburguer" href="#"><i class="fas fa-bars"></i></a>
 			</div>
 		</header>
 		<main>
@@ -44,7 +45,7 @@
 					Manage makes it simple for software teams to plan day-to-day tasks
 					while keeping the large team goals in view
 				</p>
-				<button class="button">Get Started</button>
+				<button class="button" id="button_375">Get Started</button>
 			</div>
 			<div class="div_two_main">
 				<img
@@ -90,10 +91,12 @@
 				</div>
 			</div>
 		</section>
-		<section class="coments">
+		<div class="h2">
 			<h2>What they´ve said</h2>
+		</div>
+		<section class="coments">
 			<div class="profile_coments">
-				<div class="div_profile_unique">
+				<div class="div_profile_unique" id="Anisha">
 					<img
 						class="avatar"
 						src="./imagenes/avatar-anisha.png"
@@ -106,7 +109,7 @@
 						motivated.”
 					</p>
 				</div>
-				<div class="div_profile_unique">
+				<div class="div_profile_unique" id="Ali">
 					<img
 						class="avatar"
 						src="./imagenes/avatar-ali.png"
@@ -119,7 +122,7 @@
 						much more focused.”
 					</p>
 				</div>
-				<div class="div_profile_unique">
+				<div class="div_profile_unique" id="richard">
 					<img
 						class="avatar"
 						src="./imagenes/avatar-richard.png"
@@ -133,45 +136,53 @@
 					</p>
 				</div>
 			</div>
-			<button class="button">Get Started</button>
+			<div class="div_button">
+				<button class="button">Get Started</button>
+			</div>
 		</section>
+		<article>
+			<h2>Simplify hoy your team words today.</h2>
+			<div id="article_button">
+				<button>Get Started</button>
+			</div>
+		</article>
 		<footer>
-			<div class="div_footer1">
+			<div class="div_footer">
 				<img src="./imagenes/logo_footer.png" alt="logo_empresarial" />
 				<nav>
-					<a href=""><i class="fab fa-facebook-square"></i></a>
-					<a href=""><i class="fab fa-youtube"></i></a>
-					<a href=""><i class="fab fa-twitter"></i></a>
-					<a href=""><i class="fab fa-pinterest"></i></a>
-					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-pinterest"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
 				</nav>
 			</div>
-			<div class="div_footer2">
-				<nav>
-					<ul type="none">
-						<a href="#"><li>Home</li></a>
-						<a href="#"><li>Pricing</li></a>
-						<a href="#"><li>Products</li></a>
-						<a href="#"><li>About US</li></a>
-					</ul>
-					<ul type="none">
-						<a href="#"><li>Careers</li></a>
-						<a href="#"><li>Community</li></a>
-						<a href="#"><li>Privacy Policy</li></a>
-					</ul>
-				</nav>
-			</div>
-			<div class="div_footer3">
-				<form action="registro" method="post">
+			<nav class="nav_footer">
+				<ul>
+					<a href="#"><li>Home</li></a>
+					<a href="#"><li>Pricing</li></a>
+					<a href="#"><li>Products</li></a>
+					<a href="#"><li>About Us</li></a>
+				</ul>
+				<ul>
+					<a href="#"><li>Careers</li></a>
+					<a href="#"><li>Community</li></a>
+					<a href="#"><li>Privacy Policy</li></a>
+				</ul>
+			</nav>
+			<div class="div_footer_form">
+				<form class="form_flex" action="registro" method="post">
 					<input
+						class="email_footer"
 						type="email"
 						name="email"
-						placeholder="Update in your inbox..."
+						placeholder="insert email address"
 						required
 					/>
-					<input type="submit" value="Go" name="Go" />
+					<input class="button_go" type="submit" value="Go" name="Go" />
 				</form>
-				<p>Copy</p>
+				<p id="email_required">*Please insert a valid email</p>
+				<p id="copyright">Copyright 2020. All Rights Reserved</p>
 			</div>
 		</footer>
 	</body>
