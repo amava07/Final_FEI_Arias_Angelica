@@ -4,6 +4,10 @@ body {
 	height: 100vh;
 	width: 100vw;
 	font-family: "Be Vietnam Pro", sans-serif;
+	background-image: url("../imagenes/bg-tablet-pattern.svg");
+    background-size: 800px;
+    background-position: 120% -5%;
+    background-repeat: no-repeat;
 }
 /*estilos header:*/
 header {
@@ -344,6 +348,15 @@ footer {
 .div_footer nav {
 	display: flex;
 	justify-content: space-between;
+
+}
+
+.div_footer a{
+	color: #ffffff;
+}
+.div_footer nav:hover{
+	 opacity:0.8;
+
 }
 
 .nav_footer {
@@ -358,10 +371,12 @@ footer {
 	text-decoration: none;
 	list-style: none;
 	color: #ffffff;
+	
 }
 
-.nav_footer:hover {
-	background-color: #a0a0a0;
+.nav_footer a :hover {
+	opacity: 0.2;
+	cursor: pointer;
 }
 
 .div_footer_form {
@@ -370,6 +385,7 @@ footer {
 	justify-content: space-between;
 	margin-top: 25px;
 	height: 140px;
+	margin-right: 40px;
 }
 .form_flex {
 	display: flex;
@@ -387,6 +403,19 @@ footer {
 	font-size: 13px;
 	color: #a0a0a0;
 	font-weight: 600;
+}
+
+.email_footer:focus{
+	color: #a0a0a0;
+	border-radius: none;
+	
+}
+
+.email_footer:hover{
+	cursor: pointer;
+	border-radius:#a0a0a0;
+	color: #a0a0a0;
+
 }
 
 #copyright {
@@ -417,20 +446,28 @@ footer {
 	font-style: italic;
 }
 
-/*MEDIA QUERIES*/
+/***MEDIA QUERIES***/
 
 /*Dispositivo 1140px*/
 @media (min-width: 1440px) {
 	#hamburguer {
 		display: none;
 	}
+	#copyright_375{
+		display: none;
+	}
+	#carrousel_cards{
+		display: none;
+	}
 }
 
-/*Dispositivos mobile*/
+
+/***--Dispositivos mobile--***/
+
 @media (max-width: 375px) {
 	header {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		margin: 0;
 		width: 100%;
 	}
@@ -470,10 +507,15 @@ footer {
 		flex-direction: column;
 		justify-content: flex-start;
 		align-content: center;
-		margin: 0;
+		margin: 20px;
 		height: auto;
 	}
-
+	
+	.h2{
+		font-size: 16px;
+		padding: 10px
+		
+	}
 	.div_one_section {
 		width: 100%;
 		height: auto;
@@ -481,11 +523,12 @@ footer {
 	.div_two_section {
 		display: flex;
 		flex-direction: column;
-		width: 100%px;
+		width: 100%;
 		height: auto;
 	}
 	.subtitle_1 {
 		background-color: #ffddcc;
+		
 	}
 	.subtitle_2 {
 		background-color: #ffddcc;
@@ -499,16 +542,36 @@ footer {
 	#richard {
 		display: none;
 	}
+	.div_profile_unique{
+
+	}
 	#Ali {
 		margin-top: 50px;
+		margin-bottom: 5px;
 	}
+	/*estilos carrousel*/
+	#carrousel{
+		color:#f3603b;
+		
+	}
+	#carrousel_cards{
+		display: flex;
+		align-self: flex-end;
+		margin-left: 15px;
+		margin-bottom: -25px;
+		}
+	#button_cards {
+			display: flex;
+			margin-left: 10px;
+			text-decoration: none;
+		}
 	article {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		background-color: #f3613c;
-		/* height: 224px; */
+		width: 100%;
 	}
 
 	article h2 {
@@ -523,16 +586,11 @@ footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 0in;
+		margin: 10px;
+		
 	}
 
 	article button {
-		text-align: center;
-		background-color: #ffffff;
-		border-radius: 50px;
-		border: none;
-		padding: 15px;
-		width: 134px;
 		height: auto;
 	}
 
@@ -540,7 +598,42 @@ footer {
 		flex-direction: column-reverse;
 		height: auto;
 	}
-	#copyright {
-		order: -20;
+	 .div_footer{
+		 flex-direction: column-reverse;
+		margin: 0;
 	}
+	.div_footer nav a{
+		padding: 5px;
+		font-size: 25px;
+	}
+	
+	.div_footer img{
+		text-align: center;
+		width: 50%;
+		margin-left: 40px;
+
+	}
+	.nav_footer{
+		display: flex;
+		justify-content: space-around;
+		margin:0px;
+		width: auto;
+	}
+	.form_flex{
+		margin-top: 45px;
+	}
+	#email_required{
+		display: none;
+	}
+	#copyright_375{
+		display: flex;
+		color: #ffffff;
+		font-size: 12px;
+	}
+
+	#copyright{
+		display: none;
+
+	}
+	
 }
